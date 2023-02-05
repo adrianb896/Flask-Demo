@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histogram Data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+    {% extends "layout.html" %}
+    {% block content %}
+    <div class="fs">
+    <h1>Data Values</h1>
+    <h2>Frequency of Dataset</h2>
+    <p>A histogram is a graphical representation of the distribution of a dataset of continuous or discrete data. Histograms can breaks down the data into intervals which can be displayed into plots for the frequency of the data that falls within each interval as bars. The height of each bar represents the number of data points that belong to the interval. This helps the user to quickly understand the distribution of the data and identify any patterns or trends. By visualizing the data in this way, the histogram provides valuable insights and makes it easier to make informed decisions based on the data.</p>
+    <p>The y-axis is representing the frequency of occurrences of data values in the range from 0.0 to 1.0, with a maximum frequency of 10,000 rows in our sample dataset. In result, the data values being plotted are being used as a measure of the likelihood of fraud. In this case, the high frequency of data values in the range from 0.0 to 0.5 means that there are a high number of instances where the likelihood of fraud is low.</p>
+    <img src="/static/hist.png">
+  </div>
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROC</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+    {% extends "layout.html" %}
+    {% block content %}
+    <div class="fs">
+    <h1>Receiver Operating Characteristics</h1>
+    <h2>Binary classification</h2>
+    <p>The ROC curve presents a solution to balancing the TPR and FPR by enabling the selection of the ideal threshold that maximizes the performance of a specific classifier. It serves as a valuable tool in evaluating the efficiency of a fraud detection system and contrasting the performance of various classifiers.</p>
+    <p>As for the random classifier that runs in a straight line, its intention was to have no predicitive power which makes the TPR and FPR have no bias. However, as you can see in the illustration, by using the Decision-Tree-Classifier, we are able to have our model detect high fraud cases. With this ROC curve we can see that our dataset has a high true positive rate and a low false positive rate resulting in a high accuracy of deteting fraudulent behavior.</p>
+    <img src="/static/roc.png">
+  </div>
+    {% endblock %}
+</body>
+</html>

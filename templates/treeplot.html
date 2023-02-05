@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decision Tree Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+    {% extends "layout.html" %}
+    {% block content %}
+    <div class="fs">
+    <h1>Tree-Plot</h1>
+    <h2>Sample Classifier</h2>
+    <p>The gini index is a measurement or a guess of the impurity of the data in a particular node or sample set of a particular user. A gini index of 0.0 is randomly predicted as pure. A random sample gini of 0.5 usually means that almost half the time the data can make false predictions. This type of classification problem is ideal for a Decision Tree Model.   </p>
+    <p>The random sample sets are then classified as vectors of x being the amount of users(V#) 'Not Fraud' and the y being the amount of users 'Fraud' in terms of the column 'Class' as to what is most likely to be considered fraudulent transactions. </p>
+    <img src="/static/treeplot.png">
+  </div>
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+    {% extends "layout.html" %}
+    {% block content %}
+    <div class="index">
+    <h1>Fraudulent Detection System
+       <br> Our goal with this project is to create a fraud detection system that will be able to detect fraudulent transactions and make a bias towards the risks of knowing what is fraudulent. </h1>
+    <img src="/static/fraud_detect.png">
+    </div>
+    {% endblock %}
+</body>
+</html>

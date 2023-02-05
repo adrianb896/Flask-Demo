@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decision Tree Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+    {% extends "layout.html" %}
+    {% block content %}
+    <div class="fs">
+    <h1>70/30 Train-Test Split</h1>
+    <h2>Correlation Matrix</h2>
+    <p>If some numbers in your credit card dataset are closer to 1, it generally means that they are more likely to be classified as fraudulent. This is because machine learning models are typically trained to assign higher scores or probabilities to instances that are more likely to belong to a certain class, such as a fraudulent class.</p>
+    <img src="/static/fsMatrix.png">
+  </div>
+    {% endblock %}
+</body>
+</html>

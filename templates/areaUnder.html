@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Under Curve</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+    {% extends "layout.html" %}
+    {% block content %}
+    <div class="areaUnder">
+    <h1>AUC ML</h1>
+    <h2>Area Under Curve</h2>
+    <p>The area under the curve (AUC) is a performance metric for binary classification problems. The AUC represents a model's ability to discriminate between positive and negative classes. An area of 1.0 represents a model that made all predictions perfectly. An area of 0.5 represents a model as good as random. When using the  Random-Forest-Classifier model we are able to get an accuracy of 90%. This means that with this maching learning model, we are more likely to detect fraudulent transactions.</p>
+    <img src="/static/areaUnder.png">
+  </div>
+    {% endblock %}
+</body>
+</html>
